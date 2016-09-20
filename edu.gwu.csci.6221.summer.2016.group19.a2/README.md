@@ -1,8 +1,8 @@
-Class: 		CSCI 6221 - Advanced Software Paradigms
-Assignment: 	Homework #2 - A2
-Group:		19
-Authors:	Collin Duncan, Mason Molesky, Anderson Thomas
-Date:		2016.09.20
+##### Class: 		CSCI 6221 - Advanced Software Paradigms
+##### Assignment: 	Homework #2 - A2
+##### Group:		19
+##### Authors:		Collin Duncan, Mason Molesky, Anderson Thomas
+##### Date:		2016.09.20
 
 This folder contains group 19's solution to the A2 homework assignment. There are 4 class files in the project:
 - A2
