@@ -1,3 +1,4 @@
+package com.gwu.group19;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,7 +11,7 @@ import java.util.regex.Pattern;
 /**
  * Interface for both P1 and P2 solutions to homework A2.
  * Contains the partition, run, and parseInput methods used in P1/P2.
- * @author collin
+ * @author Collin Duncan, Mason Molesky, Anderson Thomas (Group 19)
  */
 public abstract class Program {
 	private String name;

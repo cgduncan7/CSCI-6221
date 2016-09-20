@@ -1,5 +1,8 @@
+package com.gwu.group19;
 import static org.junit.Assert.*;
 import org.junit.Test;
+
+import com.gwu.group19.P1;
 
 
 public class P1Test {

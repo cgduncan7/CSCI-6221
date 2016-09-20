@@ -1,6 +1,7 @@
+package com.gwu.group19;
 /**
  * P2 - iterative quicksort
- * @author collin
+ * @author Collin Duncan, Mason Molesky, Anderson Thomas (Group 19)
  *
  */
 
@@ -36,10 +37,14 @@ public class P2 extends Program {
 			high = workingArray.length - 1,
 			top = -1;
 		
+		// begin by creating the stack and adding 0, and n-1 to the stack.
 		stack = new int[high - low + 1];
 		stack[++top] = low;
 		stack[++top] = high;
 		
+		// while the stack still has elements, pop off the high and low values and create a partition.
+		// then, if the partitions are larger than 1 element, push the relative high and low values
+		// onto the stack to continue the loop
 		while (top > 0) {
 			int h = stack[top--];
 			int l = stack[top--];

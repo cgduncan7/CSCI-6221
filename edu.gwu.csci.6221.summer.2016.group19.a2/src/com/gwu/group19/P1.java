@@ -1,8 +1,9 @@
+package com.gwu.group19;
 import java.io.IOException;
 
 /**
  * P1 - recursive quicksort
- * @author collin
+ * @author Collin Duncan, Mason Molesky, Anderson Thomas (Group 19)
  *
  */
 

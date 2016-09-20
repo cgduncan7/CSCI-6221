@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_91 (Oracle Corporation)
+Class-Path: com.gwu.group19
+Main-Class: com.gwu.group19.A2

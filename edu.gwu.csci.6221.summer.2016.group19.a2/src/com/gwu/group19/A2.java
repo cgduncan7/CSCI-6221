@@ -1,3 +1,4 @@
+package com.gwu.group19;
 /**
  * CSCI 6221 - Advanced Software Paradigms - Homework 2 - A2
  * 
@@ -14,7 +15,7 @@
  * Where inputs.txt:
  * 		1 5 9 2 4 3 6 8 7 10
  * 
- * @author collin
+ * @author Collin Duncan, Mason Molesky, Anderson Thomas (Group 19)
  */
 public class A2 {
 
@@ -23,7 +24,7 @@ public class A2 {
 	 */
 	public static void main(String[] args) {
 		if (args.length != 2) { 
-			System.out.println("Invalid number of arguments.\nEx: java A2 P2 <number of random integers to sort | filename>");
+			System.out.println("Invalid number of arguments.\nPlease provide which program (P1 or P2) of and an integer (to create a random array to sort) or a file containing a set of integers.\nExample usage: P1 30 [uses P1 to sort an array of 30 integers]");
 			System.exit(-1);
 		}
 		
