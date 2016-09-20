@@ -1,4 +1,10 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Interface for both P1 and P2 solutions to homework A2.
@@ -74,24 +80,44 @@ public abstract class Program {
 				}
 			}
 			
-			System.out.print("Input numbers:\n [ ");
-			for (int i : nums) {
-				System.out.print(i + " ");
-			}
-			System.out.println("]");
+			printInputArray(nums);
 			
 			return nums;
 			
 		} catch (NumberFormatException nfe) {
 			try {
-				// TODO: read from file
-				throw new IOException();
+				Scanner scanner = new Scanner(new FileReader(arg));
+				
+				ArrayList<Integer> t = new ArrayList<Integer>();
+				while (scanner.hasNextInt()) {
+					t.add(scanner.nextInt());
+				}
+				
+				scanner.close();
+				
+				int[] numList = new int[t.size()];
+				for (int i = 0; i < t.size(); i++) {
+					numList[i] = t.get(i);
+				}
+				
+				printInputArray(numList);
+				
+				return numList;
+				
 			} catch (IOException ioe) {
+				System.out.println(ioe.getMessage());
 				return null;
 			}
 		}
 	}
 	
+	private static void printInputArray(int[] toPrint) {
+		System.out.print("Input numbers:\n [ ");
+		for (int i : toPrint) {
+			System.out.print(i + " ");
+		}
+		System.out.println("]");
+	}
 	
 	// TO IMPLEMENT
 	public abstract int[] sort(int[] toSort);
