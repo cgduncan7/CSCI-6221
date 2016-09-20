@@ -29,9 +29,9 @@ public class A2 {
 		
 		Program p = null;
 		if (args[0].equals("P1")) {
-			p = new P1(args[1]);
+			p = new P1(args[1], true);
 		} else if (args[0].equals("P2")) {
-			p = new P2(args[1]);
+			p = new P2(args[1], true);
 		} else { 
 			System.out.println("Invalid arguments.\nEx: java A2 P2 <number of random integers to sort | filename>");
 			System.exit(-1);

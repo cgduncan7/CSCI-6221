@@ -8,14 +8,14 @@ import java.io.IOException;
 
 public class P1 extends Program {
 
-	public P1(String arg) {
-		this("P1", arg);
+	public P1(String arg, boolean verbose) {
+		this("P1", arg, verbose);
 	}
 	
-	public P1(String name, String arg) {
-		super(name, arg);
+	public P1(String name, String arg, boolean verbose) {
+		super(name, arg, verbose);
 	}
-
+	
 	public int[] sort(int[] toSort) {
 		return recursiveQuicksort(toSort, 0, toSort.length - 1);
 	}

@@ -6,16 +6,16 @@
 
 public class P2 extends Program {
 
-	public P2(String arg) {
-		this("P2", arg);
+	public P2(String arg, boolean verbose) {
+		this("P2", arg, verbose);
 	}
 	
-	public P2(String name, String arg) {
-		super(name, arg);
+	public P2(String name, String arg, boolean verbose) {
+		super(name, arg, verbose);
 	}
 
-	public int[] sort(int[] toSort) {
-		return iterativeQuicksort(toSort);
+	public int[] sort(int[] nums) {
+		return iterativeQuicksort(nums);
 	}
 	
 	/**
