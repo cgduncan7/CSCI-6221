@@ -22,7 +22,7 @@ public abstract class Program {
 		this.name = name;
 		this.nums = parseInput(arg);
 		this.verbose = verbose;
-		if (getVerbose()) printArray("Input values:", this.nums);
+		if (getVerbose()) printArray("\n" + this.name + "\nInput values:", this.nums);
 	}
 	
 	public String getName() {

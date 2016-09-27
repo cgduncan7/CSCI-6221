@@ -24,21 +24,25 @@ public class A2 {
 	 */
 	public static void main(String[] args) {
 		if (args.length != 2) { 
-			System.out.println("Invalid number of arguments.\nPlease provide which program (P1 or P2) of and an integer (to create a random array to sort) or a file containing a set of integers.\nExample usage: P1 30 [uses P1 to sort an array of 30 integers]");
-			System.exit(-1);
-		}
+			P1 p1 = new P1("1000", true);
+			p1.run();
+			
+			P2 p2 = new P2("1000", true);
+			p2.run();
+		} else {
 		
-		Program p = null;
-		if (args[0].equals("P1")) {
-			p = new P1(args[1], true);
-		} else if (args[0].equals("P2")) {
-			p = new P2(args[1], true);
-		} else { 
-			System.out.println("Invalid arguments.\nEx: java A2 P2 <number of random integers to sort | filename>");
-			System.exit(-1);
+			Program p = null;
+			if (args[0].equals("P1")) {
+				p = new P1(args[1], true);
+			} else if (args[0].equals("P2")) {
+				p = new P2(args[1], true);
+			} else { 
+				System.out.println("Invalid arguments.\nEx: java A2 P2 <number of random integers to sort | filename>");
+				System.exit(-1);
+			}
+			
+			if (p != null) 
+				p.run();
 		}
-		
-		if (p != null) 
-			p.run();
 	}
 }

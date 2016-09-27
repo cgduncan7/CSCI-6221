@@ -52,7 +52,7 @@ public class P1Test {
 	
 	@Test
 	public void P1_testFileInput_Small() {
-		P1 p1 = new P1(System.getProperty("user.dir") + "/test/test_s.txt", false);
+		P1 p1 = new P1(System.getProperty("user.dir") + "/test/com/gwu/group19/test_s.txt", false);
 		int[] outputValues = p1.sort(p1.getNums());
 		int[] expectedValues = constructExpectedValues(outputValues.length);
 		assertArrayEquals("Output values do not match expected values.",
@@ -61,7 +61,7 @@ public class P1Test {
 	
 	@Test
 	public void P1_testFileInput_Medium() {
-		P1 p1 = new P1(System.getProperty("user.dir") + "/test/test_m.txt", false);
+		P1 p1 = new P1(System.getProperty("user.dir") + "/test/com/gwu/group19/test_m.txt", false);
 		int[] outputValues = p1.sort(p1.getNums());
 		int[] expectedValues = constructExpectedValues(outputValues.length);
 		assertArrayEquals("Output values do not match expected values.",
@@ -70,7 +70,7 @@ public class P1Test {
 	
 	@Test
 	public void P1_testFileInput_Large() {
-		P1 p1 = new P1(System.getProperty("user.dir") + "/test/test_l.txt", false);
+		P1 p1 = new P1(System.getProperty("user.dir") + "/test/com/gwu/group19/test_l.txt", false);
 		int[] outputValues = p1.sort(p1.getNums());
 		int[] expectedValues = constructExpectedValues(outputValues.length);
 		assertArrayEquals("Output values do not match expected values.",
