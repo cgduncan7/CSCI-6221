@@ -4,13 +4,22 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../A2.cpp 
+../A2.cpp \
+../Person.cpp \
+../PersonHashMap.cpp \
+../PersonLinkedList.cpp 
 
 OBJS += \
-./A2.o 
+./A2.o \
+./Person.o \
+./PersonHashMap.o \
+./PersonLinkedList.o 
 
 CPP_DEPS += \
-./A2.d 
+./A2.d \
+./Person.d \
+./PersonHashMap.d \
+./PersonLinkedList.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
